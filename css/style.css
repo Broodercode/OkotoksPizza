@@ -1,0 +1,38 @@
+body {
+    background-color: bisque;
+}
+
+li a {
+  
+    text-decoration: none;
+    list-style: none;
+    color: blue
+}
+
+ul > li {
+    display: inline-block;
+    list-style: none;
+    
+}
+
+img:first-of-type + img {
+    border: 5px dotted black;
+}
+
+:link {
+    font-weight: bold;
+}
+
+:visited {
+    text-decoration: line-through;
+}
+
+a:hover {
+    border: 2px darkblue solid;
+    background-color: lightblue;
+}
+
+a:active {
+    border: 2px green dotted;
+    background-color: lightgreen;
+}
