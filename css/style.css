@@ -2,6 +2,10 @@ body {
     background-color: bisque;
 }
 
+.container {
+    margin: 0 15%;
+}
+
 li a {
   
     text-decoration: none;
@@ -35,4 +39,27 @@ a:hover {
 a:active {
     border: 2px green dotted;
     background-color: lightgreen;
+}
+
+.photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   
+}
+
+.photo {
+    height: 250px;
+    margin: 0 50%;
+    transform: translateX(-50%);
+}
+
+.vidbox {
+    margin-left: 50%;
+    transform: translateX(-50%);
+   
+}
+
+.movie {
+    
+    
 }
