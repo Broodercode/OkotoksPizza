@@ -1,26 +1,44 @@
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 body {
-    background-color: bisque;
+    background: linear-gradient(-45deg, #DBA24A, #E12301, #E1D800, #CE0000);
+    background-size: 400% 400%;
+    animation: gradient 60s ease infinite;
+
 }
 
 .container {
+    position: absolute;
+    top: 0;
     margin: 0 15%;
+    background: linear-gradient(-45deg, #FFFA8A, #DBA24A);
 }
 
 li a {
   
     text-decoration: none;
     list-style: none;
-    color: blue
+    color: #0f0f0f;
+    padding: 2px 5px;
+    border: 2px solid black;
 }
+
+
 
 ul > li {
     display: inline-block;
     list-style: none;
     
-}
-
-img:first-of-type + img {
-    border: 5px dotted black;
 }
 
 :link {
@@ -31,35 +49,70 @@ img:first-of-type + img {
     text-decoration: line-through;
 }
 
+
+
 a:hover {
-    border: 2px darkblue solid;
-    background-color: lightblue;
+
+    background: linear-gradient(-45deg, #DBA24A, #E12301, #E1D800, #CE0000);
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+   
 }
 
+
+
 a:active {
-    border: 2px green dotted;
-    background-color: lightgreen;
+    background: linear-gradient(-45deg, #DBA24A, #E12301, #E1D800, #CE0000);
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
 }
 
 .photos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-   
+    background-color: #1f1f1f;
+   padding: 20px 10px;
+  
 }
 
 .photo {
+    border: 5px dotted black;
     height: 250px;
     margin: 0 50%;
     transform: translateX(-50%);
+    transition: 500ms;
+    
+}
+
+.photo:hover {
+    z-index: +1;
+    transform: translateX(-50%) scale(1.1);
+  
 }
 
 .vidbox {
     margin-left: 50%;
     transform: translateX(-50%);
-   
 }
 
+.article {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 5px;
+    border: 5px solid rgba(0, 0, 0, .9);
+    margin: 20px 20px;
+}
+
+.link-box:hover {
+    transform: scale(1.1);
+    transition: 500ms;
+}
 .movie {
+    margin-bottom: 20px;
     
-    
+}
+
+.bigtext {
+    color: #f0f0f0;
+    margin: 10px 50px;
 }
