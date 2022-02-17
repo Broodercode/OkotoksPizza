@@ -1,118 +1,216 @@
+* {
+  margin: 0;
+}
+
 @keyframes gradient {
     0% {
-        background-position: 0% 50%;
+      background-position: 0% 50%;
     }
     50% {
-        background-position: 100% 50%;
+      background-position: 100% 50%;
     }
     100% {
-        background-position: 0% 50%;
+      background-position: 0% 50%;
     }
-}
+  }
 
 body {
-    background: linear-gradient(-45deg, #DBA24A, #E12301, #E1D800, #CE0000);
-    background-size: 400% 400%;
-    animation: gradient 60s ease infinite;
-
+ 
 }
+
+
 
 .container {
     position: absolute;
     top: 0;
     margin: 0 15%;
-    background: linear-gradient(-45deg, #FFFA8A, #DBA24A);
-}
+    background: linear-gradient(-45deg, #fffa8a, #dba24a);
+  }
 
 li a {
-  
-    text-decoration: none;
-    list-style: none;
-    color: #0f0f0f;
-    padding: 2px 5px;
-    border: 2px solid black;
+  text-decoration: none;
+  list-style: none;
+  color: #0f0f0f;
+  padding: 2px 5px;
+  border: 2px solid black;
 }
 
-
-
 ul > li {
-    display: inline-block;
-    list-style: none;
-    
+  display: inline-block;
+  list-style: none;
+  margin-top: 10px;
 }
 
 :link {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 :visited {
-    text-decoration: line-through;
+  text-decoration: line-through;
 }
-
-
 
 a:hover {
-
-    background: linear-gradient(-45deg, #DBA24A, #E12301, #E1D800, #CE0000);
-    background-size: 400% 400%;
-    animation: gradient 5s ease infinite;
-   
+  background: linear-gradient(-45deg, #dba24a, #e12301, #e1d800, #ce0000);
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
 }
-
-
 
 a:active {
-    background: linear-gradient(-45deg, #DBA24A, #E12301, #E1D800, #CE0000);
-    background-size: 400% 400%;
-    animation: gradient 5s ease infinite;
+  background: linear-gradient(-45deg, #dba24a, #e12301, #e1d800, #ce0000);
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
 }
 
-.photos {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    background-color: #1f1f1f;
-   padding: 20px 10px;
-  
-}
 
-.photo {
-    border: 5px dotted black;
-    height: 250px;
-    margin: 0 50%;
-    transform: translateX(-50%);
-    transition: 500ms;
-    
-}
 
-.photo:hover {
-    z-index: +1;
-    transform: translateX(-50%) scale(1.1);
-  
-}
-
-.vidbox {
-    margin-left: 50%;
-    transform: translateX(-50%);
-}
 
 .article {
-    background-color: #f0f0f0;
-    text-align: center;
-    padding: 5px;
-    border: 5px solid rgba(0, 0, 0, .9);
-    margin: 20px 20px;
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 5px;
+  border: 5px solid rgba(0, 0, 0, 0.9);
+  margin: 20px 20px;
 }
 
 .link-box:hover {
-    transform: scale(1.1);
-    transition: 500ms;
+  transform: scale(1.1);
+  transition: 500ms;
 }
 .movie {
-    margin-bottom: 20px;
-    
+  margin: 10px 2px;
+
+  padding: 0;
 }
 
 .bigtext {
-    color: #f0f0f0;
-    margin: 10px 50px;
+  color: #f0f0f0;
+  margin: 10px 50px;
+}
+.pizzavideo {
+    width: 100%;
+}
+
+@media only screen and (max-width: 500px) {
+    * {
+        margin: 0;
+    }
+    .container {
+    margin: 0;
+    min-width: 100vw;
+    
+    }
+
+    .article {
+        margin: 0 5px;
+    }
+
+    .photos {
+       display: grid;
+        padding: 0;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+       
+    }
+
+    .photo {
+       display: inline-block;
+       
+        margin: 0;
+        border: none;
+      
+    }
+
+    img {
+        width: 100%;
+    }
+    .vidbox {
+        width: 100%;
+        margin: 0;
+        transform: none;
+    }
+
+   
+}
+
+@media only screen and (max-width: 1000px) {
+    .container {
+        margin: 0;
+        min-width: 100vw;
+        
+        }
+    .photos {
+        display: grid;
+         padding: 0;
+         grid-template-columns: repeat(auto-fit, minmax(500px, 3fr));
+        
+     }
+
+     .photo {
+        display: inline-block;
+        
+         margin: 0;
+         border: none;
+       
+     }
+ 
+     img {
+         width: 100%;
+     }
+     .vidbox {
+         width: 100%;
+         margin: 0;
+         transform: none;
+     }
+ 
+     .pizzavideo {
+         width: 100%;
+     }
+}
+
+@media only screen and (min-width: 1000px) {
+
+ 
+    body {
+       
+        background: linear-gradient(-45deg, #dba24a, #e12301, #e1d800, #ce0000);
+        background-size: 400% 400%;
+        animation: gradient 60s ease infinite;
+    }
+
+    .container {
+    
+       margin: 0;
+        width: 100vw;
+    
+    }
+
+    img {
+        height: 250px;
+    }
+    .photos {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        background-color: #1f1f1f;
+        padding: 20px 10px;
+      } 
+      
+      .photo {
+        border: 5px dotted black;
+      
+        margin: 0 50%;
+        transform: translateX(-50%);
+        transition: 500ms;
+      } 
+      
+       .photo:hover {
+        z-index: +1;
+        transform: translateX(-50%) scale(1.1);
+      }
+
+      
+.vidbox {
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+
+
 }
