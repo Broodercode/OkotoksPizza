@@ -64,7 +64,7 @@ ul > li {
 }
 
 .article {
-  background-color: #f0f0f0;
+  background-color: #f1f1f1;
   text-align: center;
   padding: 5px;
   border: 5px solid rgba(0, 0, 0, 0.9);
@@ -84,7 +84,7 @@ ul > li {
 }
 
 .bigtext {
-  color: #f0f0f0;
+  color: #f1f1f1;
   margin: 10px 50px;
 }
 
