@@ -1,0 +1,22 @@
+
+li {
+    & a {
+      text-decoration: none;
+      list-style: none;
+      color: #0f0f0f;
+      padding: 2px 5px;
+      border: 2px solid black;
+
+      &:hover {
+        background: linear-gradient(-45deg, #dba24a, #e12301, #e1d800, #ce0000);
+        background-size: 400% 400%;
+        animation: gradient 5s ease infinite;
+      }
+
+      &:active {
+        background: linear-gradient(-45deg, #dba24a, #e12301, #e1d800, #ce0000);
+        background-size: 400% 400%;
+        animation: gradient 5s ease infinite;
+      }
+    }
+  }
